@@ -80,38 +80,3 @@ Java Toy Project
 ====================
 메뉴입력 : 1
 ```
-
-## Configuration Settings
-1. intellij 실행 > New Project > 항목 입력 > Create 버튼 클릭
-  - Name : ComicBookRental
-  - Language : Java
-  - Build System : Gradle
-  - Advanced Setting
-    - GroupId : org.comicbookret
-    - ArtifactId : ComicBookRental 
-![image](https://user-images.githubusercontent.com/33537820/215393294-c151ad97-ad15-4f14-b455-eeccaace376f.png)
-
-
-2. Lombok 라이브러리 설치를 위해 dependency 설정
- - Build.gradle 파일을 더블 클릭 > dependencies(의존성) 영역 아래에 추가
- ```
-    compileOnly 'org.projectlombok:lombok:1.18.22'
-    annotationProcessor 'org.projectlombok:lombok:1.18.22'
-    implementation 'org.slf4j:slf4j-api:1.7.25'
- ```
- - 우측 상단에 코끼리 모양(Load gradle change)을 클릭하면 변경 내용이 반영되면서 라이브러리 다운
- 
-3. Lombok 플러그인 설치 및 Enable annotation proccesing 설정
-  - File > Settings > Plugins > lombok 검색 > 선택 후 install
-  - File > Settings > Build, Execution, Deployment > Compiler > Annotation Processors > Enable annotation processing 체크박스 선택 > OK 버튼 클릭
-  
-4. [선택] encoding x-windows-949 에러 발생시
-  - File > Settings > Editor > Code Style > File Encodings >
-    - Global Encoing : UTF-8
-    - Project Encoding : UTF-8
-    - Default encoding for properties files: UTF-8
-  - Help > Edit Custom VM Options...에 -Dfile.encoding=UTF-8 추가
-  - File > Settings > Build, Execution, Deployment > Build Tools > Gradle > 
-    - Build and run using : IntelliJ IDEA
-![image](https://user-images.githubusercontent.com/33537820/215395117-a3fba531-842b-4ef4-a116-6343fe9179b7.png)
-![image](https://user-images.githubusercontent.com/33537820/215395364-c9324e53-6beb-4036-96da-b8852c887381.png)
